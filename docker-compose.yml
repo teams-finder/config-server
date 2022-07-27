@@ -1,0 +1,8 @@
+vault:
+  image: vault:latest
+  ports:
+    - "8200:8200"
+  environment:
+    VAULT_DEV_ROOT_TOKEN_ID: roottoken
+  cap_add:
+    - IPC_LOCK
